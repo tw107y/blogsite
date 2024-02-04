@@ -4,16 +4,16 @@ import requests
 
 
 app = Flask(__name__)
+CORS(app)
 
-@app.route('/get_data')
-@cross_origin(origin='*')
+@app.route('/api', methods=['GET'])
 def get_data():
     #r = requests.get("http://ergast.com/api/f1/current/last/results.json")
-    r = "1pg"
+    r = {"a":"b1"}
 
     return r
 
 
 # Running app
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(debug=True) # port might be wrong
