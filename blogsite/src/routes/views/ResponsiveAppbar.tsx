@@ -15,7 +15,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { pink } from '@mui/material/colors';
 import  pfp  from "./Meprof.png"
 
-const pages = ['想你', '恋爱小树', '日记', '每日问答'];
+const pages = ['想你', '恋爱小树', '日记', '每日问答', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
